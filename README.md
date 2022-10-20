@@ -17,19 +17,19 @@ Projeto para criar arquivos de remessas e processar arquivos de retorno no forma
 
 * Leitura e geração de arquivos de retorno e remessa nos formatos CNAB 240 e 400
 
-| Banco           | Versão da Remessa  | Versão do Retorno  |
-|-----------------|--------------------|--------------------|
-| Banco do Brasil | 240 (Beta)         | 240 e 400          |
-| Bradesco        |                    | 240                |
-| Caixa           | 240                | 240 e 400          |
-| Itaú            | 400                | 400                |
-| Santander       |                    | 240                |
+| Banco           | Versão da Remessa | Versão do Retorno  |
+|-----------------|-------------------|--------------------|
+| Banco do Brasil | 240 (Beta)        | 240 e 400          |
+| Bradesco        |                   | 240                |
+| Caixa           | 240               | 240 e 400          |
+| Itaú            | 400               | 400                |
+| Santander       | 240               | 240                |
 
 ## Instalação
 ### Composer
-Se você já conhece o **Composer**, adicione a dependência abaixo à diretiva *"require"* no seu **composer.json**:
+Instale usando composer:
 ```
-"andersondanilo/cnab_php": "1.3.*"
+composer require guilhermecfviana/cnab_php
 ```
 
 ## Como Usar

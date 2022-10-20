@@ -45,15 +45,16 @@ class Arquivo implements \Cnab\Remessa\IArquivo
             $campos[] = 'conta_dv';
         }
 
-        if ($this->codigo_banco == \Cnab\Banco::CEF || $this->codigo_banco == \Cnab\Banco::BANCO_DO_BRASIL) {
+        if ($this->codigo_banco == \Cnab\Banco::CEF ||
+            $this->codigo_banco == \Cnab\Banco::BANCO_DO_BRASIL ||
+            $this->codigo_banco == \Cnab\Banco::SANTANDER
+        ) {
             $campos[] = 'agencia';
             $campos[] = 'agencia_dv';
             $campos[] = 'conta';
             $campos[] = 'operacao';
             $campos[] = 'numero_sequencial_arquivo';
         }
-
-
 
         foreach ($campos as $campo) {
             if (array_key_exists($campo, $params)) {
